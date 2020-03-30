@@ -55,7 +55,7 @@ function Topics() {
 
   return (
     <div>
-      <h2>Topics</h2>
+      <h2>Topics Component</h2>
 
       <ul>
         <li>
@@ -84,7 +84,10 @@ function Topics() {
 
 function Topic() {
   let { topicId } = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
+
+  return (
+    <h3>Rendered by child Topic component -> Requested topic ID: {topicId}</h3>
+  );
 }
 
 export default App;
